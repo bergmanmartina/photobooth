@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
 	console.log ('photobooth')
-res.render('index')
+res.send('index')
 })
 app.listen(3000, function () {
 console.log('Testing Testing')

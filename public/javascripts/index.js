@@ -1,6 +1,4 @@
-const video = () => {
-	console.log ('camera-stream')
-}
+const video = document.querySelector('#video');
 
 navigator.getMedia = (navigator.getUserMedia ||
           navigator.webkitGetUserMedia ||

@@ -13,8 +13,7 @@ navigator.getMedia( { video: true }, (stream) => {
     console.error(err);
   }
 );
-const take_photo_btn = document.querySe
-lector('#take-photo');
+const take_photo_btn = document.querySelector('#take-photo');
 
 take_photo_btn.addEventListener('click', (e) => {
 
@@ -24,6 +23,8 @@ take_photo_btn.addEventListener('click', (e) => {
 })
 
 const takeSnapshot = () => {
-  const video.videoHeight
-  const video.videoWidth
+  const height = video.videoHeight;
+  const width = video.videoWidth;
+  console.log(height, width);
 }
+

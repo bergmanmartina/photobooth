@@ -11,3 +11,5 @@ res.send('index')
 app.listen(3000, function () {
 console.log('Testing Testing')
 })
+
+app.use(express.static(path.join(__dirname, 'public')))

@@ -13,3 +13,17 @@ navigator.getMedia( { video: true }, (stream) => {
     console.error(err);
   }
 );
+const take_photo_btn = document.querySe
+lector('#take-photo');
+
+take_photo_btn.addEventListener('click', (e) => {
+
+  e.preventDefault();
+//Logga in consolen när man klickar. 
+
+})
+
+const takeSnapshot = () => {
+  const video.videoHeight
+  const video.videoWidth
+}

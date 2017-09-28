@@ -16,7 +16,8 @@ navigator.getMedia( { video: true }, (stream) => {
 const take_photo_btn = document.querySelector('#take-photo');
 
 take_photo_btn.addEventListener('click', (e) => {
-
+  takeSnapshot ()
+  const snap = takeSnapshot()
   e.preventDefault();
 //Logga in consolen när man klickar. 
 
@@ -25,6 +26,14 @@ take_photo_btn.addEventListener('click', (e) => {
 const takeSnapshot = () => {
   const height = video.videoHeight;
   const width = video.videoWidth;
-  console.log(height, width);
-}
+  //console.log(takeSnapshot);
 
+const hidden_canvas = document.querySelector ('#min-canvas')
+
+const context = hidden_canvas.getContext('2d')
+
+context.drawImage(video, 0, 0, 640, 480);
+
+return hidden_canvas.toDataURL('image/png'); 
+
+}

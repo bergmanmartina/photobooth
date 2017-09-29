@@ -18,8 +18,8 @@ const take_photo_btn = document.querySelector('#take-photo');
 take_photo_btn.addEventListener('click', (e) => {
   const snap = takeSnapshot()
 
-const image = document.querySelector('takeSnapshot')
-  image.setAttribute('canvas', snap)
+const image = document.querySelector('img')
+  image.setAttribute('src', snap)
   e.preventDefault();
 
 })

@@ -8,8 +8,12 @@ app.get('/', (req, res) => {
 	console.log ('photobooth')
 res.render('index')
 })
-app.listen(3000, function () {
-console.log('Testing Testing')
-})
+const port = process.env.PORT || 3000 {
+console.log('hej hej')
+}
 
 app.use(express.static(path.join(__dirname, 'public')))
+
+
+
+//app.listen(3000, function ()

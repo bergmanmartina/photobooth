@@ -1,5 +1,5 @@
 body {
-	align-items: center;
+	display: inline-block;
 }
 
 canvas {
@@ -11,10 +11,15 @@ h1 { background-color: black;
 	padding: 10px;
  }
 
+ video {
+ 	height: 450px;
+ 	width: 550px;
+ }
+
  #snap {
  	border-style: dotted;
  	border-color: purple;
- 	border-radius: 50px;
+ 	border-radius: 20px;
  }
 
 #take-photo {
@@ -38,6 +43,5 @@ h1 { background-color: black;
 	float: left;
 	background-color: black;
 	font-family: arial;
-
 
 }

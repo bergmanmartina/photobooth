@@ -1,9 +1,20 @@
+body {
+	align-items: center;
+}
+
 canvas {
 	display: none;
 }
 
 h1 { background-color: black;
 	color: white;
+	padding: 10px;
+ }
+
+ #snap {
+ 	border-style: dotted;
+ 	border-color: purple;
+ 	border-radius: 50px;
  }
 
 #take-photo {

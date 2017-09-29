@@ -33,7 +33,7 @@ const takeSnapshot = () => {
 
 const hidden_canvas = document.querySelector('#min-canvas') 
 const context = hidden_canvas.getContext('2d')
-context.drawImage(video, 0, 0, 640, 480);
+context.drawImage(video, 0, 0, width, height);
 return hidden_canvas.toDataURL('image/png'); 
 }
 

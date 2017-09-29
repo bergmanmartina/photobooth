@@ -13,15 +13,17 @@ navigator.getMedia( { video: true }, (stream) => {
     console.error(err);
   }
 );
-const take_photo_btn = document.querySelector('#take-photo');
 
+const take_photo_btn = document.querySelector('#take-photo');
 take_photo_btn.addEventListener('click', (e) => {
   const snap = takeSnapshot()
 
-const image = document.querySelector('img')
+  const image = document.querySelector('#snap');
   image.setAttribute('src', snap)
   e.preventDefault();
 
+const save = document.querySelector('#spara');
+  save.setAttribute('href', snap)
 })
 
 const takeSnapshot = () => {
@@ -30,11 +32,8 @@ const takeSnapshot = () => {
   console.log('take-photo');
 
 const hidden_canvas = document.querySelector('#min-canvas') 
-
 const context = hidden_canvas.getContext('2d')
-
 context.drawImage(video, 0, 0, 640, 480);
-
 return hidden_canvas.toDataURL('image/png'); 
-
 }
+
